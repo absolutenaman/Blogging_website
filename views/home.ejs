@@ -1,0 +1,13 @@
+<%- include('partials/header.ejs'); %>
+
+<h1>Hello</h1>
+<p><%= blog_data%></p>
+
+<% for (var i =0; i <post_var.length;  i++ ) { %>
+    <h1> <%= post_var[i].title %></h1> 
+     <br/>
+   <p><%= post_var[i].message.substring(0,50)+"..." %>
+  <a href="/posts/<%=post_var[i].title %>">Read more</a> 
+   </p>
+   <% } %>
+<%- include('partials/footer.ejs'); %>

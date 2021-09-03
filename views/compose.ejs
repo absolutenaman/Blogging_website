@@ -1,0 +1,16 @@
+<%- include('partials/header.ejs'); %>
+    <h1>Compose</h1>
+    <form action="/compose" method="POST">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Title</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="composed_title">
+        
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Message to be Published</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" name="composed_message">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    <%- include('partials/footer.ejs'); %>
