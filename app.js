@@ -82,7 +82,7 @@ app.get("/posts/:postId",async function(req,res)
   console.log(x);
   try {
     let model_name=await post_reference_table.find({_id:x}); 
-    console.log(model_name);
+    // console.log(model_name);
     res.render('post', {post:model_name});
 
   } catch (error) {
