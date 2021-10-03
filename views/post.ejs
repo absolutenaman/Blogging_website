@@ -2,9 +2,9 @@
 
 
 
-    <h1> <%= post.title %></h1> 
+    <h1> <%= post[0].post_title %></h1>  
      <br/>
-   <p><%= post.message %></p>
+   <p><%= post[0].post_text %></p>
   
 
 <%- include('partials/footer.ejs'); %>
