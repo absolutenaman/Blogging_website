@@ -9,7 +9,7 @@ const mongoose=require('mongoose');
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(express.static("public"));
-mongoose.connect('mongodb://localhost:27017/blogDB',{useNewUrlParser:true});
+mongoose.connect('mongodb+srv://absolute_naman:KIET123@cluster-1.bv4rl.mongodb.net/?retryWrites=true&w=majority',{useNewUrlParser:true});
 const db=mongoose.connection;
 const blogSchema ={
     post_title:  String,
